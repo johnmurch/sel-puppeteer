@@ -78,6 +78,10 @@ e.g.
 │   ├── visit-headless.js
 │   ├── visit-mobile.js
 │   ├── wysiwyg-amazon.js
+│   ├── cli # bash to run chrome headless
+│   │   ├── dump-dom.sh
+│   │   ├── generate-screenshot.sh
+│   │   ├── screenshot.png
 │   ├── data # data for bot-a-quick-demo.js, bot-backlinks.js, bot-xtra-gsc.js, bot-redirect.js
 │   │   ├── backlinks.csv
 │   │   ├── demo.csv

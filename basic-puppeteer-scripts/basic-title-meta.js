@@ -4,7 +4,6 @@ const puppeteer = require('puppeteer');
 
 // CHANGE DEFAULT URL
 const url = 'https://www.tesla.com';
-const filename = 'tesla.csv';
 
 (async () => {
   const browser = await puppeteer.launch(); // launch browser

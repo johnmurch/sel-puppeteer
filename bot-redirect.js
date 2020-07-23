@@ -91,6 +91,7 @@ async function fetch(que) {
           redirectChain: redirectChain,
           redirectChainLength: redirectChain.length
         };
+        console.log(payload)
 
         // generate CSV
         let firstRun = true;
@@ -124,13 +125,6 @@ async function fetch(que) {
           output.push(row.join()); // by default, join() uses a ','
           fs.appendFileSync(filename, output.join(os.EOL));
         }
-
-
-        // TODO - Do Something Cool!
-        // Save to S3?
-        // Database?
-        // API?
-
       } catch (err) {
         console.log(`Error going to URL: ${err}`);
       }

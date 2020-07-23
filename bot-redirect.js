@@ -87,11 +87,11 @@ async function fetch(que) {
         // init response
         let payload = {
           statusCode: response.status(),
-          url: q.url,
+          url: response.url(),
           redirectChain: redirectChain,
           redirectChainLength: redirectChain.length
         };
-        console.log(payload)
+        console.log(JSON.stringify(payload, null, 4))
 
         // generate CSV
         let firstRun = true;

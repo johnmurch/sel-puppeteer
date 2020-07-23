@@ -78,21 +78,21 @@ e.g.
 │   ├── visit-headless.js
 │   ├── visit-mobile.js
 │   ├── wysiwyg-amazon.js
-│   ├── cli # bash to run chrome headless
-│   │   ├── dump-dom.sh
-│   │   ├── generate-screenshot.sh
-│   │   ├── screenshot.png
-│   ├── data # data for bot-a-quick-demo.js, bot-backlinks.js, bot-xtra-gsc.js, bot-redirect.js
-│   │   ├── backlinks.csv
-│   │   ├── demo.csv
-│   │   ├── http___www.johnmurch.com_-Latest links-2020-07-15.csv
-│   │   ├── redirect.txt
-│   ├── report # generated from bot-backlinks.js, bot-xtra-gsc.js, bot-redirect.js, dom-vs-source-save.js
-│   │   ├── backlinks.csv
-│   │   ├── dom.html
-│   │   ├── gsc-backlinks.csv
-│   │   ├── redirects.csv
-│   │   ├── source.html
+├── cli # bash to run chrome headless
+│   ├── dump-dom.sh
+│   ├── generate-screenshot.sh
+│   ├── screenshot.png
+├── data # data for bot-a-quick-demo.js, bot-backlinks.js, bot-xtra-gsc.js, bot-redirect.js
+│   ├── backlinks.csv
+│   ├── demo.csv
+│   ├── http___www.johnmurch.com_-Latest links-2020-07-15.csv
+│   ├── redirect.txt
+├── report # generated from bot-backlinks.js, bot-xtra-gsc.js, bot-redirect.js, dom-vs-source-save.js
+│   ├── backlinks.csv
+│   ├── dom.html
+│   ├── gsc-backlinks.csv
+│   ├── redirects.csv
+│   ├── source.html
 ├── bot-a-quick-demo.js
 ├── bot-backlinks.js
 ├── bot-redirect.js

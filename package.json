@@ -1,0 +1,20 @@
+{
+  "name": "sel-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "neat-csv": "^5.2.0",
+    "prettyjson": "^1.2.1",
+    "puppeteer": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0"
+  }
+}

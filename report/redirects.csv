@@ -1,5 +1,5 @@
 Status Code,Destination URL,Redirect Count,Redirect Status Code,Redirect
-200,http://www.johnmurch.com/,1,301,http://johnmurch.com/
+200,https://www.johnmurch.com/,1,301,http://johnmurch.com/
 200,https://www.seamless.com/,1,301,http://www.seamless.com/
 200,https://www.google.com/?gws_rd=ssl,2,301,http://google.com/
 ,,,302,http://www.google.com/

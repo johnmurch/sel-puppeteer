@@ -17,12 +17,14 @@ const PUPPETEER_OPTIONS = {
 
 // Write to CSV
 const filename = path.join(__dirname, "./report/gsc-backlinks.csv");
+console.log('filename',filename)
 let output = []; // holds all rows of data
 const csvHeaders = [
   ["Status Code", "URL", "Backlink", "Anchor", "Rel", "Exists"],
 ];
 output.push(csvHeaders.join());
-fs.writeFileSync(filename, output); // clear file!
+console.log(output)
+fs.writeFileSync(filename, output.toString()); // clear file!
 fs.appendFileSync(filename, '\n'); // New Line
 output = [];
 
@@ -69,7 +71,7 @@ async function fetch(que) {
       try {
         let response = await page.goto(q.url, {
           waitUntil: "networkidle0",
-          timeout: 60000,
+          timeout: 15000, // set 15 second timeout
         });
 
         // init response

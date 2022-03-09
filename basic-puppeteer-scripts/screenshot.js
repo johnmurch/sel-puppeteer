@@ -1,19 +1,25 @@
 const puppeteer = require('puppeteer');
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  // setup default options
-  await page.setViewport({
-    width: 1920,
-    height: 1080
-  });
-  await page.setUserAgent(
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
-  );
+const PUPPETEER_OPTIONS = {
+  headless: true,
+  ignoreHTTPSErrors: true,
+  args: ["--no-sandbox"],
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  defaultViewport: {
+    width: 1200,
+    height: 720,
+    isMobile: false,
+  }
+};
 
-  await page.goto('https://www.reddit.com/');
-  await page.waitForSelector('title');
+
+(async () => {
+  const browser = await puppeteer.launch(PUPPETEER_OPTIONS);
+  const page = await browser.newPage();
+
+  // open reddit
+  await page.goto('https://www.weather.com/', { waitUntil: 'networkidle2'});
+	// await page.waitForSelector('body');
 
   // Takes a screenshot of the whole viewport
   await page.screenshot({

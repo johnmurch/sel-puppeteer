@@ -9,6 +9,11 @@
 
 </p>
 
+> # Revisions: SMX Master Class
+
+* Tested and Updated Scripts and dependencies
+* Includes updated [slides](master-class-puppeteer.pdf)
+
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents

@@ -17,13 +17,12 @@ const PUPPETEER_OPTIONS = {
 
 // Write to CSV
 const filename = path.join(__dirname, "./report/gsc-backlinks.csv");
-console.log('filename',filename)
 let output = []; // holds all rows of data
 const csvHeaders = [
   ["Status Code", "URL", "Backlink", "Anchor", "Rel", "Exists"],
 ];
 output.push(csvHeaders.join());
-console.log(output)
+// console.log(output)
 fs.writeFileSync(filename, output.toString()); // clear file!
 fs.appendFileSync(filename, '\n'); // New Line
 output = [];

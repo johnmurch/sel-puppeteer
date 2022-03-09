@@ -14,5 +14,3 @@ Status Code,URL,Backlink,Anchor,Rel,Exists
 200,https://www.johnfdoherty.com/quit-blogging/,http://www.johnmurch.com/,John,external nofollow ugc,true
 200,http://barcamp.org/w/page/403350/iPhoneDevCampAttendees,http://www.johnmurch.com/,John Murch ,,true
 200,https://github.com/johnmurch,http://www.johnmurch.com/,http://www.johnmurch.com,nofollow me,true
-200,https://twitter.com/johnmurch,,,,false
-200,https://www.producthunt.com/@johnmurch,http://www.johnmurch.com/,johnmurch.com,,true
